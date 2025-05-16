@@ -45,7 +45,7 @@ Run the following command to generate a standalone Windows executable:
 python -m PyInstaller --noconsole --onefile --icon=path\to\icon.ico --name=final_project ransom_bae.py
 ```
 
-> **Note**: If `CTRL+Q` exit doesn't work in the `.exe`, try adjusting permissions or run as administrator. Some keyboard hooks require elevated access.
+> **Note**: If `CTRL+Q` exit doesn't work in the `.exe`, try adjusting permissions or run as administrator. Some keyboard hooks require elevated access OR you can press power button to shutdown.
 
 ---
 
@@ -80,7 +80,7 @@ ransom_bae/
 ├── ransom_bae.py         # Main prank ransomware script
 ├── final_project.exe     # Compiled executable (Windows)
 ├── README.md             # You're reading this
-└── icon.ico              # Optional custom icon
+└── ransom_bae/Github-Octicons-Copilot-error-16.ico            # Optional custom icon
 ```
 
 ---
