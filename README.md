@@ -27,7 +27,7 @@ A prank-style fullscreen GUI "ransomware" simulation made using Python and Tkint
 ### 🔹 Requirements (for script version)
 - Python 3.x
 - `keyboard` module:
-  ```bash
+```bash
   pip install keyboard
 ````
 
@@ -89,5 +89,4 @@ ransom_bae/
 
 MIT License. Prank responsibly.
 
-```
 
