@@ -13,7 +13,7 @@ To get them back, bring me a cold coffee ☕ from the canteen.
 You have {minutes} minutes and {seconds} seconds before your GPA drops to 0.0!
 """
 
-TIMER_SECONDS = 300  # 5 mins
+TIMER_SECONDS = 500 
 SECRET_EXIT_COMBO = "<Control-q>"
 
 class RansomBaeApp:
@@ -22,7 +22,6 @@ class RansomBaeApp:
         self.root.attributes("-fullscreen", True)
         self.root.configure(bg="black")
 
-        # Block system close keys
         self.root.protocol("WM_DELETE_WINDOW", self.block_action)
         self.root.bind_all("<Alt-F4>", self.block_warning)
         self.root.bind_all("<Escape>", self.block_warning)
@@ -31,9 +30,8 @@ class RansomBaeApp:
         self.root.bind_all("<Control-q>", self.exit_program)
         self.root.bind_all("<Control-Q>", self.exit_program)
 
-        # Keep it always on top and focused
         threading.Thread(target=self.force_focus, daemon=True).start()
-        # Try to block Windows key
+
         threading.Thread(target=self.block_windows_key, daemon=True).start()
 
         self.time_left = TIMER_SECONDS
