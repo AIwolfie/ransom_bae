@@ -16,11 +16,6 @@ A prank-style fullscreen GUI "ransomware" simulation made using Python and Tkint
 
 ---
 
-## 🖼️ Preview
-
-![Ransom Bae Screenshot](screenshot.png) *(Optional: Add your screenshot here)*
-
----
 
 ## 🛠️ Setup
 
